@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Jan 31 10:58:43 2026
+# Process ID: 6132
+# Current directory: C:/Users/faruk/exp_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17964 C:\Users\faruk\exp_7\exp_7.xpr
+# Log file: C:/Users/faruk/exp_7/vivado.log
+# Journal file: C:/Users/faruk/exp_7\vivado.jou
+# Running On        :fo-ideapad
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 5 4600H with Radeon Graphics         
+# CPU Frequency     :2994 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16505 MB
+# Swap memory       :3489 MB
+# Total Virtual     :19995 MB
+# Available Virtual :8912 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/faruk/exp_7/exp_7.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source top_tb.tcl
+run all
+close_sim

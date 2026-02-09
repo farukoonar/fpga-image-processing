@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Feb  9 18:00:12 2026
+# Process ID: 46320
+# Current directory: C:/Users/faruk/Desktop/eski pc/exp_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18796 C:\Users\faruk\Desktop\eski pc\exp_7\exp_7.xpr
+# Log file: C:/Users/faruk/Desktop/eski pc/exp_7/vivado.log
+# Journal file: C:/Users/faruk/Desktop/eski pc/exp_7\vivado.jou
+# Running On        :faruk-zenbook
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen AI 7 350 w/ Radeon 860M              
+# CPU Frequency     :1996 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16234 MB
+# Swap memory       :19327 MB
+# Total Virtual     :35562 MB
+# Available Virtual :18151 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/faruk/Desktop/eski pc/exp_7/exp_7.xpr}
+write_project_tcl -no_copy_sources -force image_proc.tcl

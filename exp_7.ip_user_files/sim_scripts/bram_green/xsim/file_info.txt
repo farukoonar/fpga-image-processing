@@ -1,0 +1,2 @@
+bram_green.v,verilog,xil_defaultlib,../../../../exp_7.gen/sources_1/ip/bram_green/sim/bram_green.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

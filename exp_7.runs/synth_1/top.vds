@@ -1,0 +1,374 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Dec 18 00:20:48 2025
+# Process ID: 12524
+# Current directory: C:/Users/faruk/exp_7/exp_7.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/faruk/exp_7/exp_7.runs/synth_1/top.vds
+# Journal file: C:/Users/faruk/exp_7/exp_7.runs/synth_1\vivado.jou
+# Running On        :fo-ideapad
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 5 4600H with Radeon Graphics         
+# CPU Frequency     :2994 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :16505 MB
+# Swap memory       :6611 MB
+# Total Virtual     :23117 MB
+# Available Virtual :4719 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 515.039 ; gain = 204.180
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9240
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1389.609 ; gain = 444.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'clk25', assumed default net type 'wire' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/faruk/exp_7/exp_7.runs/synth_1/.Xil/Vivado-12524-fo-ideapad/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/faruk/exp_7/exp_7.runs/synth_1/.Xil/Vivado-12524-fo-ideapad/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_driver' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/vga_driver.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'vga_driver' (0#1) [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/vga_driver.v:4]
+INFO: [Synth 8-6157] synthesizing module 'bram_red' [C:/Users/faruk/exp_7/exp_7.runs/synth_1/.Xil/Vivado-12524-fo-ideapad/realtime/bram_red_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_red' (0#1) [C:/Users/faruk/exp_7/exp_7.runs/synth_1/.Xil/Vivado-12524-fo-ideapad/realtime/bram_red_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/controller.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/controller.v:65]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/controller.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/controller.v:3]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel11' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:91]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel12' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:92]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel13' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:93]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel21' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:94]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel22' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:95]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel23' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:96]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel31' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:97]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel32' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:98]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel33' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:99]
+INFO: [Synth 8-6157] synthesizing module 'conv_unit' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/conv_unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'conv_unit' (0#1) [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/conv_unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bram_green' [C:/Users/faruk/exp_7/exp_7.runs/synth_1/.Xil/Vivado-12524-fo-ideapad/realtime/bram_green_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_green' (0#1) [C:/Users/faruk/exp_7/exp_7.runs/synth_1/.Xil/Vivado-12524-fo-ideapad/realtime/bram_green_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel11' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:180]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel12' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:181]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel13' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:182]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel21' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:183]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel22' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:184]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel23' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:185]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel31' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:186]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel32' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:187]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel33' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:188]
+INFO: [Synth 8-6157] synthesizing module 'bram_blue' [C:/Users/faruk/exp_7/exp_7.runs/synth_1/.Xil/Vivado-12524-fo-ideapad/realtime/bram_blue_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_blue' (0#1) [C:/Users/faruk/exp_7/exp_7.runs/synth_1/.Xil/Vivado-12524-fo-ideapad/realtime/bram_blue_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel11' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:268]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel12' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:269]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel13' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:270]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel21' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:271]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel22' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:272]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel23' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:273]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel31' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:274]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel32' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:275]
+WARNING: [Synth 8-689] width (4) of port connection 'pixel33' does not match port width (5) of module 'controller' [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/faruk/exp_7/exp_7.srcs/sources_1/new/top.v:3]
+WARNING: [Synth 8-7137] Register buffer1_reg in module controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-7137] Register buffer2_reg in module controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'buffer1_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "buffer1_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'buffer2_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "buffer2_reg" dissolved into registers
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1540.582 ; gain = 595.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1540.582 ; gain = 595.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1540.582 ; gain = 595.102
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1540.582 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/bram_green/bram_green/bram_green_in_context.xdc] for cell 'MEM_GREEN'
+Finished Parsing XDC File [c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/bram_green/bram_green/bram_green_in_context.xdc] for cell 'MEM_GREEN'
+Parsing XDC File [c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK_GEN'
+Finished Parsing XDC File [c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK_GEN'
+Parsing XDC File [c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/bram_blue/bram_blue/bram_blue_in_context.xdc] for cell 'MEM_BLUE'
+Finished Parsing XDC File [c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/bram_blue/bram_blue/bram_blue_in_context.xdc] for cell 'MEM_BLUE'
+Parsing XDC File [c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/bram_red/bram_red/bram_red_in_context.xdc] for cell 'MEM_RED'
+Finished Parsing XDC File [c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/bram_red/bram_red/bram_red_in_context.xdc] for cell 'MEM_RED'
+Parsing XDC File [C:/Users/faruk/exp_7/exp_7.srcs/constrs_1/imports/exp_7/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/faruk/exp_7/exp_7.srcs/constrs_1/imports/exp_7/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/faruk/exp_7/exp_7.srcs/constrs_1/imports/exp_7/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1643.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1643.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1643.633 ; gain = 698.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1643.633 ; gain = 698.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/faruk/exp_7/exp_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for MEM_GREEN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CLK_GEN. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MEM_BLUE. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MEM_RED. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1643.633 ; gain = 698.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              FIRST_LINE |                              000 |                              000
+             SECOND_LINE |                              001 |                              001
+                   PROC1 |                              010 |                              010
+             END_OF_LINE |                              011 |                              101
+                   PROC2 |                              100 |                              011
+                   PROC3 |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1643.633 ; gain = 698.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 3     
+	   2 Input   13 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
++---Registers : 
+	               17 Bit    Registers := 3     
+	               12 Bit    Registers := 1299  
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   6 Input   17 Bit        Muxes := 3     
+	   6 Input   12 Bit        Muxes := 6     
+	   6 Input    8 Bit        Muxes := 9     
+	   4 Input    5 Bit        Muxes := 27    
+	   2 Input    4 Bit        Muxes := 9     
+	   6 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1643.633 ; gain = 698.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1643.633 ; gain = 698.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_RED has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_GREEN has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module MEM_BLUE has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |bram_red      |         1|
+|3     |bram_green    |         1|
+|4     |bram_blue     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |bram_blue  |     1|
+|2     |bram_green |     1|
+|3     |bram_red   |     1|
+|4     |clk_wiz    |     1|
+|5     |CARRY4     |   189|
+|6     |LUT1       |    74|
+|7     |LUT2       |   317|
+|8     |LUT3       |    11|
+|9     |LUT4       |   421|
+|10    |LUT5       |   136|
+|11    |LUT6       |  5725|
+|12    |MUXF7      |  2016|
+|13    |MUXF8      |  1008|
+|14    |FDCE       |   324|
+|15    |FDRE       | 15408|
+|16    |IBUF       |     1|
+|17    |OBUF       |    14|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1751.844 ; gain = 806.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 36 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:20 . Memory (MB): peak = 1751.844 ; gain = 703.312
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1751.844 ; gain = 806.363
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1751.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3213 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1751.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d235b42e
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 32 Warnings, 36 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:35 . Memory (MB): peak = 1751.844 ; gain = 1225.156
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1751.844 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/faruk/exp_7/exp_7.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 18 00:22:37 2025...
