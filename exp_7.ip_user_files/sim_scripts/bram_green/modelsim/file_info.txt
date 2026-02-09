@@ -1,3 +1,0 @@
-blk_mem_gen_v8_4.v,verilog,blk_mem_gen_v8_4_8,../../../ipstatic/simulation/blk_mem_gen_v8_4.v,
-bram_green.v,verilog,xil_defaultlib,../../../../exp_7.gen/sources_1/ip/bram_green/sim/bram_green.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
